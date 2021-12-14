@@ -16,8 +16,7 @@ class SQRServiceTest {
     )
     void shouSquareCalculate(String test, int firstNumber, int secondNumber, int expected) {
         SQRService service = new SQRService();
-        int square = service.square(firstNumber, secondNumber);
-        assertEquals(expected, square);
-
+        int squares = service.square(firstNumber, secondNumber);
+        assertEquals(expected, squares);
     }
 }
